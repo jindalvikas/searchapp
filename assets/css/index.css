@@ -1,0 +1,18 @@
+#search-bar {
+	position: fixed; 
+	top: 0; 
+	width: 100%; 
+	z-index:10;
+}
+
+#dataList {
+	margin-top: 50px;
+}
+
+.tags-badge {
+	margin: 2px;
+}
+
+li {
+	max-width: 540px;
+}

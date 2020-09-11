@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Profiles</title>
+      <!-- Google Font -->
+      <link href="https://fonts.googleapis.com/css?family=Quicksand:700|Roboto:400,400i,700&display=swap" rel="stylesheet">
+      <!-- FontAwesome JS-->
+      <script defer src="assets/fontawesome/js/all.min.js"></script>
+      <!-- Theme CSS -->  
+      <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+      <link id="theme-style" rel="stylesheet" href="assets/css/index.css">
+      <script src="./services/SearchService.js"></script>
+      <script src="./services/DataService.js"></script>
+   </head>
+   <body>
+      <input type="text" class="form-control"  id="search-bar" placeholder="Search by tag..">
+      <br>
+      <ul id="dataList">
+      </ul>
+      <!-- Javascript -->     
+           
+      <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+      <script src="assets/plugins/popper.min.js"></script>
+      <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+      <script src="assets/plugins/jquery.scrollTo.min.js"></script>  
+      <script src="assets/plugins/back-to-top.js"></script>  
+      <script src="assets/js/main.js"></script>
+      <script>
+        $(document).ready(loadData());
+        // Get the input field
+         var searchbar = document.getElementById("search-bar");
+         
+         searchbar.addEventListener("keyup", function(event) {
+             searchByTags();
+         });
+      </script>
+   </body>
+</html>
